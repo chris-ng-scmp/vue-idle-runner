@@ -13,6 +13,13 @@ import VueIdleRunner from 'vue-idle-runner'
 Vue.use(VueIdleRunner)
 ```
 
+By Function:
+```javascript
+this.$idleQueue(function() {
+  console.log('I am run by idleQueue')
+})
+```
+
 Template:
 ```html
 <idle-queue>
