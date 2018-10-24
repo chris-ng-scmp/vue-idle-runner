@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chris-ng-scmp/vue-idle-runner.git"
+    "url": "git+https://github.com/scmp/vue-idle-runner.git"
   },
   "author": "Chris Ng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chris-ng-scmp/vue-idle-runner/issues"
+    "url": "https://github.com/scmp/vue-idle-runner/issues"
   },
-  "homepage": "https://github.com/chris-ng-scmp/vue-idle-runner#readme",
+  "homepage": "https://github.com/scmp/vue-idle-runner#readme",
   "dependencies": {
     "lodash": "^4.17.11"
   },
