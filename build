@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -e
+
+# Cleanup
+rm -rf dist
+
+babel=`pwd`/node_modules/.bin/babel
+$babel src --out-dir dist
+
+# Uglify rollup build
+uglify=`pwd`/node_modules/.bin/uglifyjs
+cd dist
+
+echo Uglify...
+for f in ./*.js ./**/*.js; do
+    echo "$f"
+    $uglify $f --mangle -o $f
+done
