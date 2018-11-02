@@ -1,6 +1,6 @@
 # Vue-Idle-Runner
 
-Vue module with component wrapper and mixin for running component / function in each idle call, this help a lot for better performance and follow the principle of Lightouse audit for performance in `First CPU Idle` and `Time to Interactive
+Vue module with component wrapper and mixin for running component / function in each idle call, this help a lot for better performance and follow the principle of Lighthouse audit for performance in `First CPU Idle` and `Time to Interactive
 `, so that each component or function can be run individually rather than running at the same time 
 
 # Usage
@@ -11,6 +11,13 @@ import App from './App.vue'
 import VueIdleRunner from 'vue-idle-runner'
 
 Vue.use(VueIdleRunner)
+```
+
+By Function:
+```javascript
+this.$idleQueue(function() {
+  console.log('I am run by idleQueue')
+})
 ```
 
 Template:

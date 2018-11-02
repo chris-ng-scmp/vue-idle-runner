@@ -3,20 +3,21 @@
   "version": "1.0.0",
   "description": "Vue component and mixin for running component / function in each idle call.",
   "main": "dist/index.js",
+  "types": "src/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --out-dir dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chris-ng-scmp/vue-idle-runner.git"
+    "url": "git+https://github.com/scmp/vue-idle-runner.git"
   },
   "author": "Chris Ng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chris-ng-scmp/vue-idle-runner/issues"
+    "url": "https://github.com/scmp/vue-idle-runner/issues"
   },
-  "homepage": "https://github.com/chris-ng-scmp/vue-idle-runner#readme",
+  "homepage": "https://github.com/scmp/vue-idle-runner#readme",
   "dependencies": {
     "lodash": "^4.17.11"
   },
@@ -24,5 +25,8 @@
     "babel-cli": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.7.0"
+  },
+  "peerDependencies": {
+    "vue": "2.x"
   }
 }
